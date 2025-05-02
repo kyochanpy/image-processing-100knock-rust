@@ -1,5 +1,6 @@
 use crate::questions::q002::rgb_to_gray;
 use image::{DynamicImage, Luma};
+
 pub fn binarization(base_image_path: &str) -> DynamicImage {
     let mut result = rgb_to_gray(base_image_path).to_luma8();
 
